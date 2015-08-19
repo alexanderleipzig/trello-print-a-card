@@ -1,6 +1,6 @@
 # trello-print-a-card
 
-Feel free to improve the cards printdesign!
+Feel free to improve the cards printdesign! Sometimes it dosen't work. Just reload the Page then.
 
 ##How to use
 

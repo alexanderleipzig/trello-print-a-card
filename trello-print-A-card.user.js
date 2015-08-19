@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Trello Print-A-Card
-// @version      0.1
+// @version      0.2
 // @description  Print Cards
 // @author       Alexander Rothe, Daniel Pichel
 // @match        https://trello.com/*
