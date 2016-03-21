@@ -34,12 +34,14 @@ function print() {
     mywindow.document.write($('.js-card-desc').html());
     mywindow.document.write('started_at:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;');
     mywindow.document.write('finished_at:');
-    mywindow.document.write("<h3>Checklist</h3>");
     var lists = $('p.checklist-item-details-text');
-    lists.each(function() {
-        var text = $(this).text();
-        mywindow.document.write("<p><input type='checkbox'>"+ ' ' + text + "</p>");
-    });
+    if (lists.length) {
+        mywindow.document.write("<h3>Checklist</h3>");
+        lists.each(function() {
+            var text = $(this).text();
+            mywindow.document.write("<p><input type='checkbox'>"+ ' ' + text + "</p>");
+        });
+    }
     mywindow.document.write('</div>');
     mywindow.print();
     mywindow.close();
